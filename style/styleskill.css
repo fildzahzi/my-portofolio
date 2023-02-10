@@ -1,0 +1,347 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+/* section start*/
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #C4DDFF;
+  align-items: center;
+  justify-content: center;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.logo{
+  color: #FFD24C;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+span{
+  color: #92B4EC;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+nav ul li a{
+  color: #FFD24C;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover{
+  color: #92B4EC;
+  transition: .4s;
+}
+.btn{
+  background-color: #92B4EC;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform .4s;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+.content{
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  right: 8%;
+  align-content: center;
+  
+}
+h3{
+  color: #FFD24C;
+  margin: 20px 0px 20px;
+  font-size: 50px;
+  text-align: center;
+}
+h5{
+  color: #92B4EC;
+  font-size: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/*Progress animation*/
+.box
+{
+  width:300px;
+  height:300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  flex-direction:column;
+  box-shadow:0 30px 60px rgba(0,0,0,.4);
+  transition: transform .2s;
+  margin-left: 10%;
+  margin-top: 20%;
+  float: left;
+  border: 3px solid #92B4EC;
+  border-radius: 20px;
+}
+/* .box:hover
+{
+ transform:scale(1.2);
+} */
+
+/*1st progress bar*/
+.box .percentsatu
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percentsatu svg
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percentsatu svg circle
+{
+  width:150px;
+  height:150px;
+  fill:none;
+  stroke-width:10;
+  stroke:#000;
+  transform:translate(5px,5px);
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+}
+.box .percentsatu svg circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percentsatu svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(850 - (850 * 87) / 100);
+  stroke:#FFD24C;
+}
+.box .percentsatu .num
+{
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  color:#92B4EC;
+}
+.box .percentsatu .num h2
+{
+  font-size:48px;
+}
+.box .percentsatu .num h2 span
+{
+  font-size:24px;
+}
+.box .text
+{
+  padding: 10px 0 0;
+  color:#92B4EC;
+  font-weight:700;
+  letter-spacing:1px;
+  text-align: center;
+}
+/*2nd progress bar*/
+.box .percentdua
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percentdua svg
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percentdua svg circle
+{
+  width:150px;
+  height:150px;
+  fill:none;
+  stroke-width:10;
+  stroke:#000;
+  transform:translate(5px,5px);
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+}
+.box .percentdua svg circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percentdua svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(1100 - (1100 * 87) / 100);
+  stroke:#FFD24C;
+}
+.box .percentdua .num
+{
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  color:#92B4EC;
+}
+.box .percentdua .num h2
+{
+  font-size:48px;
+}
+.box .percentdua .num h2 span
+{
+  font-size:24px;
+}
+.box .text
+{
+  padding: 10px 0 0;
+  color:#FFD24C;
+  font-weight:700;
+  letter-spacing:1px;
+  text-align: center;
+}
+/*3rd progress bar*/
+.box .percenttiga
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percenttiga svg
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percenttiga svg circle
+{
+  width:150px;
+  height:150px;
+  fill:none;
+  stroke-width:10;
+  stroke:#000;
+  transform:translate(5px,5px);
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+}
+.box .percenttiga svg circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percenttiga svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 87) / 100);
+  stroke:#FFD24C;
+}
+.box .percenttiga .num
+{
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  color:#92B4EC;
+}
+.box .percenttiga .num h2
+{
+  font-size:48px;
+}
+.box .percenttiga .num h2 span
+{
+  font-size:24px;
+}
+.box .text
+{
+  padding: 10px 0 0;
+  color:#92B4EC;
+  font-weight:700;
+  letter-spacing:1px;
+  text-align: center;
+}
+/*Section footer*/
+footer{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, black, #3F3351);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p:nth-child(1){
+  font-size: 30px;
+  color: #FFD24C;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(2){
+  color: #FFD24C;
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+}
+.social{
+  display: flex;
+  
+}
+.social i{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFD24C;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.social i:hover{
+  transform: scale(1.3);
+  transition: .3s;
+}
+.end{
+  position: absolute;
+  color: #FFD24C;
+  bottom: 35px;
+  font-size: 14px;
+  
+}
